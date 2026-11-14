@@ -476,3 +476,11 @@ section[id]{scroll-margin-top:80px}
  .hero-stage,.member-scene,.tilt-card{transform:none!important}
  .marquee-track{animation:none!important}
 }
+
+/* Ajuste final: centrar realmente los modelos 3D en pantallas estrechas.
+   El ancho lógico del escenario no debe empujar la cuadrícula móvil. */
+.hero-art,.member-art{display:flex;align-items:center;justify-content:center;min-width:0}
+.hero-stage{flex:0 0 560px}
+.member-scene{flex:0 0 530px}
+.ex-shield{font-size:0}
+.ex-shield::after{font-size:60px}
